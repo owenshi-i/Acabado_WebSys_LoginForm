@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div class="container" id="loginContainer">
+    <form id="loginForm">
+        <h2>Login</h2>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="text" id="email" placeholder="Enter email">
+            <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <div class="password-box">
+                <input type="password" id="password" placeholder="Enter password">
+                <span id="togglePassword">Show</span>
+            </div>
+            <small class="error" id="passwordError"></small>
+        </div>
+
+        <button type="submit">Login</button>
+        <p id="loginError"></p>
+    </form>
+</div>
+
+<!-- SUCCESS -->
+<div class="container" id="successContainer" style="display:none;">
+    <h2>Login Successful</h2>
+    <p>Welcome! You are now logged in.</p>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
